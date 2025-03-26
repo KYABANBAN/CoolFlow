@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Official website of Cool Flow band.">
+  <title>Cool Flow - Official Band</title>
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-image: url(coolflow.jpg);
+      background-attachment: fixed;
+      background-size: auto;
+      background-position-x: 0px;
+      background-position-y: 25px;
+      background-repeat: no-repeat;
+      color: #232323;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #effd77;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #effd77;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    li {
+      padding: 10px 20px;
+    }
+
+    nav {
+      background-color: #00cda495;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav .logo h2 {
+      color: #ffffff;
+      font-size: 30px;
+    }
+
+    nav ul li a {
+      color: #f6ffa1;
+      font-size: 18px;
+      padding: 10px;
+      border-radius: 15px;
+      transition: background-color 0.3s ease; 
+    }
+
+    nav ul li a:hover {
+      background-color: #00ac8a95;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-image: url('https://via.placeholder.com/1600x800?text=Band+Image');
+      background-size: cover;
+      background-position: center;
+      padding: 100px 0;
+      text-align: center;
+      color: #fff;
+    }
+
+    .hero h1 {
+      font-size: 3.5em;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.5em;
+      margin-bottom: 30px;
+    }
+
+    .cta-button {
+      background-color: #00cda495;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border-radius: 5px;
+    }
+
+    .cta-button:hover {
+      background-color: #008b6f95;
+    }
+
+    /* About Section */
+    .about {
+      padding: 60px 0;
+      background-color: #fff;
+    }
+
+    .about h2 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 40px;
+    }
+
+    .about p {
+      font-size: 1.2em;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Music Section */
+    .music {
+      padding: 60px 0;
+      background-color: #f4f4f4;
+    }
+
+    .music h2 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 40px;
+    }
+
+    .music ul {
+      display: flex;
+      justify-content: space-around;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .music ul li {
+      background-color: #00cda495;
+      padding: 20px;
+      border-radius: 10px;
+      color: #fff;
+      text-align: center;
+      width: 150px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .music ul li a {
+      color: #ffffff;
+      font-size: 18px;
+      padding: 10px;
+      border-radius: 15px;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Shows Section */
+    .shows {
+      padding: 60px 0;
+      background-color: #fff;
+    }
+
+    .shows h2 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 40px;
+    }
+
+    .show-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .show-list li {
+      font-size: 1.2em;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+      width: 60%;
+      text-align: center;
+    }
+
+    /* Contact Section */
+    .contact {
+      padding: 60px 0;
+      background-color: #f4f4f4;
+    }
+
+    .contact h2 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 40px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+
+    form textarea {
+      height: 150px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    footer p {
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">
+      <h2>Cool Flow</h2>
+    </div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#music">Social</a></li>
+      <li><a href="#shows">Shows</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Cool Flow</h1>
+      <p>Your favorite indie band</p>
+      <a href="#music" class="cta-button">Listen to Our Music</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Cool Flow is a rising indie band formed in April 2022. With a mix of catchy rhythms and heartfelt lyrics, we’ve been rocking the local music scene and are now ready to take the world by storm. <br>We are from the Philippines particularly in the beautiful island of Cebu.  <br>We are students of Rosemont Hills Montessori College, Danao City, Cebu and <br>we sing regularly on resto bars and on special occasions like weddings and parties.</p>
+    </div>
+  </section>
+
+  <!-- Music Section -->
+  <section id="music" class="music">
+    <div class="container">
+      <h2>Our Socials</h2>
+      <ul>
+        <li><a href="https://www.youtube.com/redirect?event=channel_description&redir_token=QUFFLUhqbjBVU19ZdjZSczk4TWYtZDFUWjJkQ2VpOWRpZ3xBQ3Jtc0tsMHN2b2I0X21teW9kT2JiSEZoc296V3AzZXJ6eTVxcG5yZmptSk9RcjdibXFJZ09vbEFDZ2ZqUEFqMDU4RWY3UmNHTThqY25HNHIwNC1FdmNTM1BSX1ZUeWdodUdaYVg5al9VbmtFRVlFUkNDaHZNQQ&q=https%3A%2F%2Fwww.tiktok.com%2F%40cool.flow" target="_blank">TikTok</a></li>
+        <li><a href="https://www.youtube.com/channel/UCo-8_gLWa7p1LUj-V2Rq2Nw" target="_blank">YouTube</a></li>
+        <li><a href="https://www.facebook.com/CoolFlow27" target="_blank">Facebook</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Shows Section -->
+  <section id="shows" class="shows">
+    <div class="container">
+      <h2>Upcoming Shows</h2>
+      <ul class="show-list">
+        <li>April 26, 2025 - RHMC - Upper Ground</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form action="#" method="POST">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="cta-button">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2022 Cool Flow. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Optional JS for smooth scrolling or additional functionality
+    // Add smooth scrolling effect for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
